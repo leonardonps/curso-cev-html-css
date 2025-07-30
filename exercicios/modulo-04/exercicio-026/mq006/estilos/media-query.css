@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* 
+Typical Device Breakpoints
+
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    body {
+        background: linear-gradient(to bottom, #2D3255, #131833);
+    }
+
+    section#login {
+        width: 75vw;
+    }
+
+    section#login > div#imagem {
+        position: relative;
+        float: left;
+        height: 100%;
+        width: 35%;
+        vertical-align: middle;
+    }
+
+    section#login > div#imagem > picture > img {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+   
+    }
+
+    section#login > div#formulario {
+        float: right;
+        height: 100%;
+        width: 65%;
+    }
+
+    section#login > div#formulario > h1 {
+        font-size: 3em;
+    }
+    
+    section#login > div#formulario > p {
+        font-size: 1.25em;
+    }
+
+    .campo input{
+        height: 40px;
+    }
+
+    #ibotao-entrar {
+        height: 45px;
+    }
+
+    #ilink-esqueci-senha {
+        margin-top: 3%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background: linear-gradient(to bottom, #2D3255, #131833);
+    }
+
+    section#login {
+        width: 875px;
+    }
+
+    section#login > div#imagem {
+        position: relative;
+        float: right;
+        height: 100%;
+        width: 35%;
+        vertical-align: middle;
+    }
+
+    section#login > div#imagem > picture > img {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    section#login > div#formulario {
+        float: left;
+        height: 100%;
+        width: 65%;
+    }
+
+
+    section#login > div#formulario > h1 {
+        font-size: 3.5em;
+    }
+    
+    section#login > div#formulario > p {
+        font-size: 1.35em;
+    }
+
+    .campo input{
+        height: 40px;
+    }
+
+    #ibotao-entrar {
+        height: 45px;
+    }
+
+    #ilink-esqueci-senha {
+        margin-top: 3%;
+    }
+}

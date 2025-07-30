@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+                <picture>
+                    <source media="(max-width:768px)" srcset="imagens/login-pequeno.png">
+                    <source media="(max-width:992px)" srcset="imagens/login-medio.png">
+                    <img src="imagens/login-extra-grande.png" alt="Logo de um usuário">
+                </picture>
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Olá, seja bem-vindo(a)! Faça login para acessar sua conta e fazer as configurações em seu ambiente.</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="Digite seu e-mail" autocomplete="email" required maxlength="100">
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">lock</span>
+                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" autocomplete="current-password" required minlength="6" maxlength="20">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar" id="ibotao-entrar">
+                    <a href="#" id="ilink-esqueci-senha">Esqueci minha senha</a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+        }
+
+        col.cnome {
+            background-color: chartreuse;
+        }
+
+        col.cgrupo {
+            background-color: yellow;
+        }
+
+        col.cprof {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>José Mario</td>
+            <td>M</td>
+            <td>52</td>
+            <td>Mecânico</td>
+        </tr>
+        <tr>
+            <td>Mariana Fontes</td>
+            <td>F</td>
+            <td>36</td>
+            <td>Média</td>
+        </tr>
+        <tr>
+            <td>Hélio Rodrigues</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Floricultor</td>
+        </tr>
+        <tr>
+            <td>Pedro José</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Luíza Torres</td>
+            <td>F</td>
+            <td>18</td>
+            <td>Estagiária</td>
+        </tr>
+    </table>
+</body>
+</html>
