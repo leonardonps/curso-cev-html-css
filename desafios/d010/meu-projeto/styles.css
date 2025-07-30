@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'idroid';
+    src: url('./../fontes/idroid.otf')
+}
+
+body {
+    margin: 0;
+    background-color: #84E1AD;
+    font-family: "Roboto";
+    text-align: justify;
+}
+
+body > header {
+    background-image: linear-gradient( #4dca83, #1A5C38);
+    color: white;
+    height: 30vh;
+}
+
+body > header > h1 {
+    margin: 0;
+    padding-top: 3.5vh;
+    text-align: center;
+    font-weight: 200;
+}
+
+body > header > h2 {
+    margin-top: 3vh;
+    padding-left: 27vw;
+    padding-right: 27vw;
+    text-align: center;
+    font-weight: lighter;
+}
+
+nav {
+    margin-top: 4vh;
+    margin-left: 1.5vw;
+}
+
+nav > a {
+    padding-right: 1.25vw;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main { 
+    margin: auto;
+    padding: 4vh 1.75vw 2vh 1.75vw;
+    width: 65vw;
+    background-color: white;
+    border-radius: 0vw 0vw 1vw 1vw;
+}
+
+h3 {
+    margin: 0;
+    font-family: idroid;
+    font-size: 5vh;
+    color: #1A5C38;
+}
+
+h4 {
+    font-family: idroid;
+    font-size: 3.5vh;
+    color:#1A5C38;
+    background-image: linear-gradient(to right, #31f78a3a, #e1ffee16);
+}
+
+/* Talvez use */
+/* p:hover {
+    background-color: #84E1AD;
+    border-radius: 0.25vw;
+    } */
+    
+p {
+    text-indent: 2vw;
+    line-height: 3.5vh;
+}
+
+.destaque {
+    color: #1A5C38;
+}
+
+.no-decoration{
+    text-decoration: none;
+}
+
+.link::after{
+    font-family: 'Material Icons';
+    color:grey;
+    content: '\e157';
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+#secao-video {
+    height: 75vh;
+    margin: auto -1.75vw auto -1.75vw;
+    padding-top: 3.5vh;
+    background-color: #1A5C38;
+}
+
+#secao-video > iframe {
+    display: block;
+    margin: auto;
+}
+
+#secao-saber-mais {
+    margin-top: 2.5vh;
+    padding: 0vh 2vw 2vh 2vw;
+    background-color: #bbefd1;
+    border-radius: 0.75vw;
+}
+
+#secao-saber-mais > ul {
+    column-count: 2;
+}
+
+#secao-saber-mais > ul > li {
+    list-style-type: none;
+}
+
+#secao-saber-mais > ul > li::before {
+    content: '\2714  '
+}
+
+#secao-saber-mais > ul > li > span {
+    text-decoration: underline;
+}
+
+#secao-saber-mais > header {
+    height: 4vh;
+    margin: 0vh -2vw 0vh -2vw;
+    padding: 0.25vw;
+    background-color: #3cc075;
+    border-radius: 0.75vw 0.75vw 0vw 0vw;
+}
+
+h5 {
+    margin: 0;
+    color: white;
+    text-indent: 1%;
+    font-size: larger;
+}
+
+footer {
+    margin-top: 2vh;
+    padding: 1px;
+    background-color: #1A5C38;
+    text-align: center;
+    color: white;
+}
